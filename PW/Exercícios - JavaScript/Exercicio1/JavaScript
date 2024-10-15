@@ -1,0 +1,15 @@
+
+document.getElementById('btnCalcular').addEventListener('click', function() {
+    const anoAtual = new Date().getFullYear();
+
+    const anoNascimento = document.getElementById("nascimentoInput").value;
+
+    const resultado = document.getElementById("idadeResultado");
+
+    if (anoNascimento === "" || anoNascimento > anoAtual || anoNascimento < 1900) {
+        resultado.innerText = "Por favor, insira um ano de nascimento válido.";
+    } else {
+        const idade = anoAtual - anoNascimento;
+        resultado.innerText = "Você tem: " + idade + " anos de idade.";
+    }
+});
