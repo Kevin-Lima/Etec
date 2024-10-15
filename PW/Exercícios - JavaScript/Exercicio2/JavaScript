@@ -1,0 +1,14 @@
+document.getElementById('btnVerificar').addEventListener('click', function() {
+    const numero = document.getElementById('inputNumero').value;  // 1
+    const resultado = document.getElementById('resultadoTexto');  // 2
+
+    if (numero === "") {  // 3
+        resultado.innerText = "Insira um número:";  // 4
+    } else {  
+        if (numero % 2 === 0) {  // 5
+            resultado.innerText = "O número escolhido é par.";  // 6
+        } else {
+            resultado.innerText = "O número escolhido é ímpar.";  // 7
+        }
+    }
+});
