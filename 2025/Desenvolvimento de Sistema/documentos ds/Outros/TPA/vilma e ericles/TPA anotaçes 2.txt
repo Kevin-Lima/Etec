@@ -1,0 +1,144 @@
+Class: começar sempre com letra maiuscula. uma classe sempre vai representar um elemento da vida real. So class que começa com letra maiuscula, para poder criar um padrao
+que todos os desenvolvedores consigam identificar
+
+// é utilizado para comentário de uma linha
+
+ /*comentário de múltiplas linhas
+ */
+
+Variáveis: são espaços na memória RAM que servem para armazenar dados
+
+Como declarar uma variável: tipo + nome da variável + ponto e vírgula ( ; )
+
+Linguagem fortemente tipada: precisa deixar implícito o tipo da variável (typescript)
+
+Linguagem fracamente tipada: não há necessidade de definir o tipo de variável (javascript)
+
+Tipos numéricos: ( números inteiros)(Representam números sem casas decimais, como contagem de itens.):
+
+Byte: Representa números inteiros de 8 bits (1 byte) com sinal, variando de -128 a 127.
+Short: Representa números inteiros de 16 bits (2 bytes) com sinal, variando de -32,768 a 32,767.
+Int: É um tipo de dado numérico inteiro que ocupa 4 bytes de memória e pode armazenar valores inteiros na faixa 
+de -2,147,483,648 a 2,147,483,647.
+Long: Similar ao int, mas ocupa 8 bytes de memória, permitindo armazenar valores inteiros maiores na faixa de 
+-9,223,372,036,854,775,808 a 9,223,372,036,854,775,807.
+
+números com ponto flutuante (decimal)(Permitem representar números com casas decimais, como valores monetários ou medidas precisas.):
+
+Float (4 bytes): Imagine um cofrinho com 4 casas decimais. Ele pode guardar uma quantia de dinheiro, mas só com 
+uma precisão limitada. Então, ele consegue armazenar valores de até aproximadamente 3.40282347E+38 (um número 
+muito grande!), mas com uma precisão que permite apenas 7 dígitos depois do ponto decimal. Por exemplo, 
+se você colocar R$ 1.2345678 no cofrinho, ele vai arredondar e guardar apenas os 1.234567.
+Double (8 bytes): Agora, pense em um cofre maior, com 8 casas decimais. Ele pode armazenar uma quantia 
+de dinheiro muito maior e com uma precisão muito melhor do que o cofrinho menor. Ele pode guardar valores 
+de até aproximadamente 1.79769313486231570E+308 (um número ainda maior!), e consegue manter a precisão 
+até 15 dígitos após o ponto decimal. Então, se você colocar R$ 1.234567890123456789 no cofre grande, ele 
+vai guardar todos esses números exatamente como são.
+
+Tipos primitivos(Os tipos primitivos são os tipos de dados mais básicos disponíveis em uma linguagem de programação.Eles são chamados de "primitivos" porque não são compostos de outros tipos de dados.
+Os tipos primitivos fornecem os blocos de construção fundamentais para a representação e manipulação de dados em um programa.):
+
+Byte
+Short
+Int = números inteiros
+Long = maior quantidade suportada em java
+Float
+Double
+Boolean: Representa um tipo de dado lógico que pode ter apenas dois valores: verdadeiro (true) ou falso (false).
+Char: Representa um único caractere Unicode e é representado entre aspas simples (' '). Pode ser usado para 
+representar letras, números, caracteres especiais e assim por diante.
+
+Tipos por referência (São tipos de dados que fazem referência a objetos ou instâncias de classes. Em vez de armazenar diretamente o valor, armazenam um endereço de memória onde o valor está localizado.):
+
+String (Texto): ENTENDER O QUE E PRA PODER PASSAR PRA CA
+Date (Data): Representa uma data específica, incluindo dia, mês, ano, hora, minuto e segundo. 
+SimpleDateFormat (Data): É uma classe que permite formatar e analisar datas de acordo com padrões específicos. 
+É útil para converter objetos Date em strings formatadas e vice-versa, facilitando a exibição e manipulação de 
+datas em diferentes formatos.
+[todos são classes por possuírem a primeira letra maiuscula]
+
+SINAIS MATEMATICA
+
+Adição: + - Usado para somar dois valores.
+Subtração: - - Usado para subtrair um valor de outro.
+Multiplicação: * - Usado para multiplicar dois valores.
+Divisão: / - Usado para dividir um valor pelo outro.
+Módulo: % - Usado para encontrar o resto da divisão de um valor pelo outro.
+
+EXEMPLO: 
+int a = 10;
+int b = 5;
+
+int soma = a + b;        // soma = 10 + 5 = 15
+int subtracao = a - b;   // subtracao = 10 - 5 = 5
+int multiplicacao = a * b;  // multiplicacao = 10 * 5 = 50
+int divisao = a / b;     // divisao = 10 / 5 = 2
+int modulo = a % b;      // modulo = 10 % 5 = 0
+
+EXEMPLO DE COMO CALCULAR PORCENTAGEM:
+double parte = 20.0; // A parte que você deseja calcular a porcentagem
+double total = 100.0; // O valor total
+
+double porcentagem = (parte / total) * 100;
+
+System.out.println("A porcentagem é: " + porcentagem);
+ 
+
+27/03/2024
+
+ESTRURAS CONDICIONAIS: ela determina qual parte do codigo sera executado com algumas condiçoes antes.
+dependendo de uma condiçao a parte executada do sistema sera "a" ou "b".
+
+IF/else - se/se não. determina qual parte sera executada
+ELSE: sempre sera executado caso o comando anterior (IF) n for atendido
+
+IF:Se
+ELSE IF:Se não se / adiciona mais alternativas / outras verificaçoes
+ELSE:Se não
+
+OPERADORES RELACIONAIS: 
+
+- ==: igualdade
+- !=: diferente
+-  >: maior que
+-  <: menor que
+- >=: maior ou igual
+- <=: menor ou igual
+
+OPERADORES LOGICOS:
+
+&& = E: todas as condiçoes precisam ser verdadeiras
+|| = ou: basta que uma seja verdadeira
+
+EXEMPLO:
+
+else if (media == 5 || media == 6 ); : ou é 5 ou 6
+recuperaçao
+
+else if (media >= 5 && media <7); : dessa forma qualquer numero que seja maior que 5 e menor que 7 entra na recuperaçao ex: 6,25
+recuperaçao
+
+
+
+
+
+Switch/case:
+
+Switch: Avalia uma expressão e executa o bloco de código correspondente a um dos casos.
+Case: Define um valor específico que será comparado com o valor da expressão.
+Break: Encerra a execução do bloco de código do caso atual.
+Default: Define um bloco de código a ser executado caso nenhum dos casos correspondentes seja encontrado.
+
+EXEMPLO:
+
+switch (expressao) {
+    case valor1:
+        // Código a ser executado se expressao for igual a valor1
+        break;
+    case valor2:
+        // Código a ser executado se expressao for igual a valor2
+        break;
+    default:
+        // Código a ser executado se nenhum dos casos correspondentes for encontrado
+        break;
+}

@@ -1,0 +1,174 @@
+
+package Calculo69; 
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		double x, y, soma,divisao;
+		
+		System.out.print("digite um numero: ");
+		x = sc.nextDouble ();
+		
+		System.out.print("digite outro numero: ");
+		y = sc.nextDouble();
+		
+		soma = x + y;
+		divisao = soma / 2;
+		
+		
+		System.out.println("o numero digitado foi: " + x);
+		System.out.println("o numero digitado foi: " + y);
+		System.out.println("A soma é: " + soma );
+		System.out.println(x + " dividido por " + y + " é igual a " + divisao);
+
+	}
+
+}
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ANALISE_FORMACAO_VAGA:
+
+package analise_formacao_vaga;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		double salario;
+		
+		String nome, escolaridade, formacao;
+		
+		System.out.print("Nome do Canditado: ");
+		nome=sc.nextLine();
+		
+		System.out.print("Grau de escolaridade: ");
+		escolaridade=sc.nextLine();
+		
+		System.out.print("Formação: ");
+		formacao=sc.nextLine();
+		
+		System.out.print("Pretensão salarial: ");
+		salario=sc.nextDouble();
+		
+		
+		if ((formacao.equalsIgnoreCase("análise de sistemas") || formacao.equalsIgnoreCase("analise de sistemas")  ) 
+				&& escolaridade.equalsIgnoreCase ("superior completo") && salario <=6000)  {
+			System.out.println();
+			System.out.println("Inscrição recebida");
+			
+		}else if(salario >6000) {
+			System.out.print("A faixa salarial da vaga está entre 5000 e 6000. Aceita continuar o processo?");
+			
+			String continuar = sc.next();
+			if (continuar.equalsIgnoreCase("sim") || continuar.equalsIgnoreCase("s")) {
+				System.out.println();
+				System.out.println("Inscriçao recebida");
+			
+				
+			}else {
+				System.out.println();
+				System.out.println("Agradecemos a disponibilidade - inscriçao interrompida");
+			}
+		}
+		
+		else {
+			System.out.println();
+			System.out.println("Não preenche os pré-requisitos para a vaga.");
+		}
+		
+		
+		
+		 
+		
+	}
+
+}
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROVA:
+
+package prova;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		String nome, cidade;
+		double valor;
+		
+		System.out.print("Digite o nome do Produto: ");
+		nome =sc.nextLine();
+		
+		System.out.print("Digite o Valor do Produto: ");
+		valor =sc.nextDouble();
+		sc.nextLine();
+		
+		System.out.print("Digite a Cidade de Entrega: ");
+		cidade = sc.nextLine();
+		
+		double Frete = 0.05;
+		double So_frete = Frete * valor;
+		double Final = So_frete + valor;
+		
+		if (cidade.equalsIgnoreCase("São Paulo") || cidade.equalsIgnoreCase("Sao Paulo") ) {
+			System.out.println("Frete grátis! O produto "+ nome +" Estará R$ "+ valor+"");
+			
+		}else if ((cidade.equalsIgnoreCase("Taboão da Serra") || cidade.equalsIgnoreCase("Taboao da Serra")) || cidade.equalsIgnoreCase("Embu das Artes") ) {
+		System.out.println("Produto: " + nome + "	Frete: " + So_frete + "	Valor Final: " + Final);
+		
+		}else {
+			System.out.println("Nós entregamos apenas para São paulo, Taboão da Serra e Embu das Artes");
+		}
+	}
+
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TRABALHO SOBRE SWITCH/CASE:
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Selecione uma das opções:");
+		System.out.println("1 - Se você ama Java");
+		System.out.println("2 - Se você não gosta de Java");
+		System.out.println("3 - Se entre estudar Java e PHP, você prefere dormir");
+		
+		String opcao = sc.nextLine();
+		
+		switch (opcao) {
+		case "1":
+			System.out.println("Parabéns, Java é a melhor linguagem.");
+			break;
+		case "2":
+			System.out.println("Eu não gosto de quem não gosta de Java.");
+			break;
+		case "3":
+			System.out.println("Eu te entendo, mas Java ainda é melhor.");
+			break;
+		default:
+			System.out.println("Não existe a opção " + opcao);
+			break;	
+		}
+		sc.close();
+	}
+}

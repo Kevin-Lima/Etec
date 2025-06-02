@@ -1,0 +1,38 @@
+package prova;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		String nome, cidade;
+		double valor;
+		
+		System.out.print("Digite o nome do Produto: ");
+		nome =sc.nextLine();
+		
+		System.out.print("Digite o Valor do Produto: ");
+		valor =sc.nextDouble();
+		sc.nextLine();
+		
+		System.out.print("Digite a Cidade de Entrega: ");
+		cidade = sc.nextLine();
+		
+		double Frete = 0.05;
+		double So_frete = Frete * valor;
+		double Final = So_frete + valor;
+		
+		if (cidade.equalsIgnoreCase("São Paulo") || cidade.equalsIgnoreCase("Sao Paulo") ) {
+			System.out.println("Frete grátis! O produto "+ nome +" Estará R$ "+ valor+"");
+			
+		}else if ((cidade.equalsIgnoreCase("Taboão da Serra") || cidade.equalsIgnoreCase("Taboao da Serra")) || cidade.equalsIgnoreCase("Embu das Artes") ) {
+		System.out.println("Produto: " + nome + "	Frete: " + So_frete + "	Valor Final: " + Final);
+		
+		}else {
+			System.out.println("Nós entregamos apenas para São paulo, Taboão da Serra e Embu das Artes");
+		}
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Selecione uma das opções:");
+		System.out.println("1 - Se você ama Java");
+		System.out.println("2 - Se você não gosta de Java");
+		System.out.println("3 - Se entre estudar Java e PHP, você prefere dormir");
+		
+		String opcao = sc.nextLine();
+		
+		switch (opcao) {
+		case "1":
+			System.out.println("Parabéns, Java é a melhor linguagem.");
+			break;
+		case "2":
+			System.out.println("Eu não gosto de quem não gosta de Java.");
+			break;
+		case "3":
+			System.out.println("Eu te entendo, mas Java ainda é melhor.");
+			break;
+		default:
+			System.out.println("Não existe a opção " + opcao);
+			break;	
+		}
+		sc.close();
+	}
+}

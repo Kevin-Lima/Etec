@@ -1,0 +1,42 @@
+import javax.swing.border.*;
+
+
+	Border bordaPadrao = BorderFactory.createLineBorder(Color.GRAY, 2);
+
+        // Borda ao passar o mouse
+        Border bordaMouseOver = BorderFactory.createLineBorder(Color.BLUE, 4);
+
+        // Borda ao clicar
+        Border bordaClicado = BorderFactory.createLineBorder(Color.GREEN, 5);
+
+
+        // Adicionando MouseListener para os efeitos
+        for (JButton botao : botoes) {
+            botao.setBorder(bordaPadrao);  // Borda inicial
+
+            botao.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseEntered(MouseEvent e) {
+                    // Alterar a borda quando o mouse entra
+                    botao.setBorder(bordaMouseOver);
+                }
+
+                @Override
+                public void mouseExited(MouseEvent e) {
+                    // Alterar de volta para a borda padrão quando o mouse sai
+                    botao.setBorder(bordaPadrao);
+                }
+
+                @Override
+                public void mousePressed(MouseEvent e) {
+                    // Alterar a borda quando o botão for pressionado
+                    botao.setBorder(bordaClicado);
+                }
+
+                @Override
+                public void mouseReleased(MouseEvent e) {
+                    // Voltar para a borda ao soltar o clique
+                    botao.setBorder(bordaMouseOver);
+                }
+            });
+        }

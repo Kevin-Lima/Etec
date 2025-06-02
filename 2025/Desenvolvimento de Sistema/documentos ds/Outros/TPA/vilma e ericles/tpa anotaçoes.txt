@@ -1,0 +1,365 @@
+
+ spring boot
+ para fazer API'S
+ eclipse
+ para desenvolver lógica no backend
+ mudar primeiro
+ windows
+ perspective
+ open perspective
+ e colocar java
+ logo após para criar o file, new, java project
+ criar nome do projeto
+ desmarcar o module
+ e finish
+ clicar na seta ao lado do nome do projeto
+ para aparecer duas pastas
+ src= source
+ = fonte
+ ficará todo o nosso código fonte
+ clicar com o botão direito em cima do src
+ ir em new
+ e dps class
+ nome de classe sempre começa com letra maiúscula
+ package (pasta): aplicacao
+ name: Main
+ 
+
+principal
+ uma classe SEMPRE representará algo da vida real
+ Main sempre vai ser a classe que vai executar o seu programa
+ opção public static void main
+ tudo dentro das chaves do public static void main será executa
+ tomar cuidado para não apagar as chaves
+
+ // é utilizado para comentário de uma linha
+
+ /*comentário de múltiplas linhas
+ */
+ 
+ a variável são espaços na memória ram que servem para armazenar dados
+ Como eu declaro (crio) uma variável?
+ Para que a gente declare uma variável eu preciso seguir um padrão (uma sintaxe)
+ é preciso definir o tipo e o nome da variável e no final um ponto e vírgula (;)
+ a linguagem pode ser
+ *fracamente tipada
+ *fortemente tipada
+ java é uma linguagem fortemente tipada, pois é uma linguagem que é PRECISO definir o tipo
+ uma linguagem fracamente tipada não precisa de definição de tipo
+ exemplo javascript
+ typescript
+
+ int (número inteiro)
+ exemplo: tipo+ nome da variável = valor
+ int idade = 28;
+ = é atribuição (recebe)
+ sempre colocar ; no final
+ Tipos de variáveis:
+ tipos númericos: byte (NÚMEROS INTEIROS DE -128 ATÉ 127), short , int, long
+ quais são os tipos primitivos?
+ byte, short, int, long, float, double, boolean e char
+ pergunta de prova
+
+
+ tipo por referência:
+ String (com S maiúsculo), Date, SimpleDateFormat
+ date-datas
+Tipos por referência, como String, Date, SimpleDateFormat, são tipos de dados em muitas linguagens de programação que armazenam referências a objetos na memória, em vez de armazenar diretamente os valores. Vamos entender o que isso significa:
+
+String: Em linguagens como Java, C#, Python, entre outras, String é uma classe que representa uma sequência de caracteres. Quando você declara uma variável do tipo String, ela armazena uma referência (ou endereço de memória) onde o valor real da string está armazenado. Isso significa que a variável String não armazena diretamente os caracteres da string, mas sim uma referência ao local onde esses caracteres estão armazenados na memória.
+Date: Em linguagens como Java, Date é uma classe que representa uma data e hora. Da mesma forma que String, ao declarar uma variável do tipo Date, ela armazena uma referência à instância do objeto Date na memória.
+SimpleDateFormat: Em Java, SimpleDateFormat é uma classe que permite formatar e analisar datas e horas de acordo com padrões específicos. Da mesma forma que String e Date, ao criar uma instância de SimpleDateFormat, você está criando um objeto cuja referência é armazenada na variável.
+A diferença entre tipos por referência e tipos por valor é crucial. Tipos por valor armazenam diretamente o valor real da variável, enquanto tipos por referência armazenam uma referência ao objeto na memória.
+
+Por exemplo, se você tiver duas variáveis String em Java, elas podem apontar para o mesmo objeto na memória, o que significa que ambas compartilham o mesmo conteúdo. Por outro lado, se você tiver duas variáveis int, cada uma delas armazenará seu próprio valor inteiro separado na memória.
+
+Então, resumindo, tipos por referência como String, Date e SimpleDateFormat armazenam referências a objetos na memória em vez de armazenar diretamente os valores, permitindo compartilhar e manipular esses objetos de forma eficiente.
+
+
+
+ string- guarda texto
+ concatenação é juntar
+ no exemplo do doublle x
+ é juntar o texto com a variável que foi digitada pelo usuário
+
+
+
+Pasta src (source/fonte) é onde fica o código fonte 
+
+package(pacote): pasta onde vai ser organizado todo o código fonte
+
+Class: começar sempre com letra maiuscula. uma classe sempre vai representar um elemento da vida real
+
+public class + name: refere-se a criação de uma classe
+
+public static void: tudo que está dentro das chaves, será executável, e o que não tiver, servirá pra nada
+
+// comentários: é uma descrição súmula sobre o que o código vai fazer (comentário de 1 linha)
+
+/* é um comentário de múltiplas linhas
+
+
+Variáveis: são espaços na memória RAM que servem para armazenar dados
+
+Como declarar uma variável: tipo + nome da variável + ponto e vírgula ( ; )
+
+Linguagem fortemente tipada: precisa deixar implícito o tipo da variável (javascript)
+
+Linguagem fracamente tipada: não há necessidade de definir o tipo de variável (typescript)
+
+int: número inteiro
+
+= é uma atribuição. 
+
+Tipos numéricos: ( números inteiros )
+Byte
+Short 
+Int
+Long
+
+números com ponto flutuante (decimal):
+Float (4 bytes)
+Double (8 bytes)
+
+Tipos primitivos:
+Byte
+Short
+Int = números inteiros
+Long = maior quantidade suportada em java
+Float
+Double
+Boolean (verdadeiro/falso)
+Char = 1 único caracter
+
+Tipos por referência 
+String (Texto)
+Date (Data)
+SimpleDateFormat (Data)
+[todos são classes por possuírem a primeira letra maiuscula]
+
+
+
+
+
+
+src = source = codigo fonte do codigo
+package = pasta
+Name = nome da classe = sempre em letra maiscula
+sempre deve ser algo da vida real
+classe = representa o tipo de dado.
+tudo entre a segunda chave e a terceira vai ser executado
+comentários = descrições sobre o que o codigo vai executar
+/* comentario de muitas linhas
+variaveis = espaços na memoria ram que servem para armazenar dados
+como criar/declarar uma variavel : é necessario seguir um padrãoTipo + nome da variavel  
+              ~tipo fortemente tipada = tem definição de titulos da variavel = typescript
+              ~tipo fracamente tipada = nao tem definiçao de titulos da variavel = javascript
+int = numero inteiro - valor(atribuição)
+
+"int idade = 712;
+		System.out.print(idade);"
+tipos numericos: byte - int  - short - long / numeros inteiros
+float: numeros fracionarios - sintaxe (4 bytes)
+double: numeros fracionarios - sintaxe (8 bytes)
+boolean: falso ou verdadeiro (1 bit)
+char: um UNICO caractere alfanumerico
+tipos de referencia
+String
+Date              tambem sao classes
+SimpleDateFormat
+
+
+
+
+
+
+ESTRURAS CONDICIONAIS: ela determina qual parte do codigo sera executado com algumas condiçoes antes.
+dependendo de uma condiçao a parte exxecutada do sistema sera "a" ou "b".
+27/03/2024
+
+
+IF/else - se/se não. determina qual parte sera executada
+ELSE: sempre sera executado caso o comando anterior (IF) n for atendido
+
+IF:Se
+ELSE IF:Se não se / adiciona mais alternativas / outras verificaçoes
+ELSE:Se não
+
+OPERADORES RELACIONAIS: 
+
+- ==: igualdade
+- !=: diferente
+-  >: maior que
+-  <: menor que
+- >=: maior ou igual
+- <=: menor ou igual
+
+OPERADORES LOGICOS:
+
+&& = E: todas as condiçoes precisam ser verdadeiras
+|| = ou: basta que uma seja verdadeira
+
+EXEMPLO:
+
+else if (media == 5 || media == 6 ); : ou é 5 ou 6
+recuperaçao
+
+else if (media >= 5 && media <7); : dessa forma qualquer numero que seja maior que 5 e menor que 7 entra na recuperaçao ex: 6,25
+recuperaçao
+
+
+
+
+CLASS: é uma representaçao de algo da vida real, so class que começa com letra maiuscula, para poder criar um padrao
+que todos os desenvolvedores consigam identificar
+
+Scanner: é uma classe pq começa com letra maiuscula
+
+Scanner sc = new Scanner (system.in);
+
+= new: instanciaçao de objeto = esta falando que o sc vai ter varios elementos na classe Scanner e separa espaço na memoria
+
+(system.in): ele é o teclado
+
+_1nota: primeira nota
+_: nome de variavel n pode começar com numero entao uitilizar o _
+
+sc = sintax
+
+
+
+
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner (System.in);
+	System.out.print("digite a primeira nota:");
+	float _1nota= sc.nextFloat();
+	
+	System.out.print("digite a segunda nota:");
+	float _2nota= sc.nextFloat();
+	
+	float media = (_1nota + _2nota) / 2;
+	
+	if (media >= 7) { 
+		System.out.println ("A sua média é " + media + ", vc está aprovado.");
+	} else if (media >= 5 && media <7) {
+		System.out.println ("A sua média é " + media + ", vc está em recuperaçao.");
+	
+	}else {
+		System.out.println ("A sua média é " + media + ", vc está reprovado.");
+		
+	}
+	
+	}
+
+}
+
+
+
+
+
+
+package calculaMedia;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double z, x, y, media;
+
+		System.out.print("Digite a primeira nota:");
+		x = sc.nextDouble();
+
+		System.out.print("Digite a segunda nota:");
+		y = sc.nextDouble();
+
+		media = (x + y) / 2;
+		System.out.print("Sua média é:" + media);
+		x = sc.nextDouble();
+
+
+
+PARA A PROVA:
+
+
+CLASS: é uma representaçao de algo da vida real, so class que começa com letra maiuscula, para poder criar um padrao
+que todos os desenvolvedores consigam identificar
+classe = representa o tipo de dado.
+Class: começar sempre com letra maiuscula. uma classe sempre vai representar um elemento da vida real
+
+ variável são espaços na memória ram que servem para armazenar dados
+ Como eu declaro (crio) uma variável?
+Variáveis: são espaços na memória RAM que servem para armazenar dados
+Como declarar uma variável: tipo + nome da variável + ponto e vírgula ( ; )
+
+Tipos Primitivos:
+
+Os tipos primitivos são os tipos de dados mais básicos disponíveis em uma linguagem de programação.
+Eles são chamados de "primitivos" porque não são compostos de outros tipos de dados.
+Os tipos primitivos fornecem os blocos de construção fundamentais para a representação e manipulação de dados em um programa.
+Tipos numéricos: ( números inteiros )
+Byte
+Short 
+Int
+Long
+
+números com ponto flutuante (decimal):
+Float (4 bytes)
+Double (8 bytes)
+
+Tipos primitivos:
+Byte
+Short
+Int = números inteiros
+Long = maior quantidade suportada em java
+Float
+Double
+Boolean (verdadeiro/falso)
+Char = 1 único caracter
+
+Tipos por referência 
+String (Texto)
+Date (Data)
+SimpleDateFormat (Data)
+[todos são classes por possuírem a primeira letra maiuscula]
+
+quais são os tipos primitivos?
+ byte, short, int, long, float, double, boolean e char
+float: numeros fracionarios - sintaxe (4 bytes)
+double: numeros fracionarios - sintaxe (8 bytes)
+boolean: falso ou verdadeiro (1 bit)
+char: um UNICO caractere alfanumerico
+
+
+
+
+A classe Scanner em Java é usada para ler entradas de dados do usuário a partir do console ou de outros fluxos 
+de entrada, como arquivos. É uma parte da API de entrada/saída e fornece métodos para analisar primitivos e strings 
+usando expressões regulares.
+
+
+Basicamente, println é uma abreviação de "print line", indicando que após imprimir o texto ou valor, o cursor 
+será movido para a próxima linha. Por outro lado, print simplesmente imprime o texto ou valor na mesma linha.
+
+
+Linguagem fortemente tipada: precisa deixar implícito o tipo da variável (javascript)
+Linguagem fracamente tipada: não há necessidade de definir o tipo de variável (typescript)
+
+ a linguagem pode ser
+ *fracamente tipada
+ *fortemente tipada
+ java é uma linguagem fortemente tipada, pois é uma linguagem que é PRECISO definir o tipo
+ uma linguagem fracamente tipada não precisa de definição de tipo
+Em resumo, em linguagens fracamente tipadas, as variáveis podem ser usadas de maneira mais flexível e as 
+conversões de tipo são tratadas de forma mais implícita, enquanto em linguagens fortemente tipadas, as variáveis 
+são mais estritamente associadas a tipos específicos e a conversão entre tipos requer uma ação explícita do programador.
+
+
+ 
