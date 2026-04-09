@@ -22,18 +22,15 @@ A tela exibe um campo para digitar o nome e quatro botões de menção. Cada bot
 
 ### Tela do app
 <div align="center">
-  <img src="screenshots/app.png" width="300"/>
+  <img src="print/1.jpeg" width="300"/>
 </div>
 
 ### Saída no Logcat
-![Logcat](screenshots/logcat.png)
+![Logcat](print/2.png)
 ---
 
 ## Como executar
 
-```bash
-git clone https://github.com/Wallex-Andre/logcat-mentions-app.git
-```
 1. Abra o projeto no Android Studio
 2. Aguarde o Gradle sincronizar
 3. Conecte um dispositivo físico ou inicie um emulador
