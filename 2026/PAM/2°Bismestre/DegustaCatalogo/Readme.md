@@ -42,14 +42,4 @@ Este projeto possui caráter acadêmico e tem como finalidade a aplicação prá
 * **Armazenamento:** `SharedPreferences` para persistência local combinada com serialização em objetos JSON (`JSONArray` e `JSONObject`).
 * **Seleção de Mídia:** API `ActivityResultContracts.GetContent` para integração com o gerenciador de arquivos do sistema.
 
-## Estrutura de Arquivos
 
-```text
-com.example.degustacatalogo/
-│
-├── MainActivity.kt        # Gerencia a listagem principal e o controle de estado vazio
-├── FormActivity.kt        # Gerencia o formulário de cadastro, edição e verificação de imagens
-├── DetailActivity.kt      # Gerencia a exibição detalhada de um item e a ação de exclusão
-├── Degustacao.kt          # Modelo de dados (Classe de dados do objeto)
-├── BancoDeDados.kt        # Responsável pelos métodos de salvar e carregar dados em JSON
-└── DegustacaoAdapter.kt   # Vincula a lista de objetos aos componentes visuais do RecyclerView
