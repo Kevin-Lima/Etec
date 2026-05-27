@@ -13,7 +13,7 @@ O Catálogo de Degustação é um aplicativo Android nativo projetado para regis
   <img src="imgs/3.jpeg" alt="Tela de Cadastro" width="23%" />
   &nbsp; &nbsp;
   <img src="imgs/4.jpeg" alt="Tela de Detalhes" width="23%" />
-</p>aminho/para/imagem3.png
+</p>
 
 ## Objetivos do Projeto
 
