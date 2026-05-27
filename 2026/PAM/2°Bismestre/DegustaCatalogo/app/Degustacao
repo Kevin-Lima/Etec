@@ -1,0 +1,14 @@
+package com.example.degustacatalogo
+
+// Modelo do que cada item de degustação possui
+data class Degustacao(
+    val nome: String,
+    val tipo: String,
+    val quantidade: String,
+    val nota: Float
+)
+
+// Um "banco de dados" temporário na memória para guardar nossos itens
+object BancoDeDados {
+    val listaDegustacoes = mutableListOf<Degustacao>()
+}
