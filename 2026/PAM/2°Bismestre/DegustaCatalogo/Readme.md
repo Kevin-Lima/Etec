@@ -6,14 +6,14 @@ O Catálogo de Degustação é um aplicativo Android nativo projetado para regis
 
 <!-- Substitua os links 'caminho/para/imagem.png' pelo link real ou caminho local das suas imagens -->
 <p align="center">
-  <img src="caminho/para/imagem1.png" alt="Tela Principal (Vazia)" width="23%" />
+  <img src="imgs/1.jpeg" alt="Tela Principal (Vazia)" width="23%" />
   &nbsp; &nbsp;
-  <img src="caminho/para/imagem2.png" alt="Tela Principal (Com Itens)" width="23%" />
+  <img src="imgs/2.jpeg/" alt="Tela Principal (Com Itens)" width="23%" />
   &nbsp; &nbsp;
-  <img src="caminho/para/imagem3.png" alt="Tela de Cadastro" width="23%" />
+  <img src="imgs/3.jpeg" alt="Tela de Cadastro" width="23%" />
   &nbsp; &nbsp;
-  <img src="caminho/para/imagem4.png" alt="Tela de Detalhes" width="23%" />
-</p>
+  <img src="imgs/4.jpeg" alt="Tela de Detalhes" width="23%" />
+</p>aminho/para/imagem3.png
 
 ## Objetivos do Projeto
 
