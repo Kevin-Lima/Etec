@@ -5,17 +5,17 @@ O Catálogo de Degustação é um aplicativo Android nativo projetado para regis
 ## 📱 Demonstração Visual
 
 <p align="center">
-  <img src="assets/01_splash.png" alt="Tela de Carregamento (Splash Screen)" width="23%" />
-  <img src="assets/02_login.png" alt="Tela de Login" width="23%" />
-  <img src="assets/03_cadastro.png" alt="Tela de Cadastro" width="23%" />
-  <img src="assets/04_vazio.png" alt="Catálogo de Degustação Vazio" width="23%" />
+  <img src="assets/01_splash.jpeg" alt="Tela de Carregamento (Splash Screen)" width="23%" />
+  <img src="assets/02_login.jpeg" alt="Tela de Login" width="23%" />
+  <img src="assets/03_cadastro.jpeg" alt="Tela de Cadastro" width="23%" />
+  <img src="assets/04_vazio.jpeg" alt="Catálogo de Degustação Vazio" width="23%" />
 </p>
 
 <p align="center">
-  <img src="assets/05_lista.png" alt="Catálogo de Degustação com Registros" width="23%" />
-  <img src="assets/06_perfil.png" alt="Tela de Perfil" width="23%" />
-  <img src="assets/07_formulario.png" alt="Tela de Criação de Novo Registro" width="23%" />
-  <img src="assets/08_detalhes.png" alt="Tela de Detalhes de um Item Cadastrado" width="23%" />
+  <img src="assets/05_lista.jpeg" alt="Catálogo de Degustação com Registros" width="23%" />
+  <img src="assets/06_perfil.jpeg" alt="Tela de Perfil" width="23%" />
+  <img src="assets/07_formulario.jpeg" alt="Tela de Criação de Novo Registro" width="23%" />
+  <img src="assets/08_detalhes.jpeg" alt="Tela de Detalhes de um Item Cadastrado" width="23%" />
 </p>
 
 ## 🎯 Objetivos do Projeto
