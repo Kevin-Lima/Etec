@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "118839460896",
+    "project_id": "estruturas-moleculares-3d",
+    "storage_bucket": "estruturas-moleculares-3d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118839460896:android:48ed20e3571bcaf1f16845",
+        "android_client_info": {
+          "package_name": "com.example.estruturas_moleculares_3d"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHNqzUmktnxT6DurdhOW6tlBshSu_96zY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
