@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "186533729627",
+    "project_id": "painel-iot-9afe6",
+    "storage_bucket": "painel-iot-9afe6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186533729627:android:ac4f9ac9a4c9619dfe367e",
+        "android_client_info": {
+          "package_name": "com.example.paineliot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEfkfxW-Cg0ltFsBrFd-t6fLHjJ0dZHng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
